@@ -1,0 +1,81 @@
+#home {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+ 
+}
+
+.lefthome{
+    width: 50%;
+    height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.righthome{
+    width: 50%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.righthome img {
+    width: 60%;
+    filter: drop-shadow(2px 2px 15px rgb(200, 200, 255));
+} 
+
+.homedetails{
+    font-size: 2vmax;
+}
+
+.line1{
+    font-size: 0.8em;
+
+}
+
+.line2{
+    font-size: 1.9em;
+    background: linear-gradient(to right,rgb(29, 121, 135), rgb(250, 248, 248));
+    background-clip: text;
+    color: transparent;
+}
+
+.line3{
+    font-size: 1.1em;
+}
+
+.homedetails button{
+    padding: 10px 30px;
+    background-color: rgb(66, 180, 205);
+    color: black;
+    border: 2px solid rgb(66, 180, 205);
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+.homedetails button:hover{
+    background-color: transparent;
+    color:rgb(66, 180, 205);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width:750px) {
+    #home {
+        flex-direction: column-reverse;
+    }
+    
+    .lefthome, .righthome {
+        width: 100%;
+        height: 50vh;
+    }
+    .righthome {
+        align-items: end;
+    }
+}
